@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Algebra II</title>
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/inversa.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenedor_titulo">
+        <h1>Ingrese el orden de la matriz</h1>
+      </div>
+      <div class="bottom_texto">
+        <p><span>Nota:</span> Recuerde que la matriz tiene que <span>ser cuadrada</span> y <br> considere que <span>no todas las matrices tienen inversa</span> <br> ademas solo puede ingresar filas y columnas positivas</p>
+      </div>
+      <div class="contenedor_inputs">
+        <form action="">
+          <input type="number" name="" id="filas-inversa" pattern="[1-9][0-9]*" placeholder="Cantidad de filas">
+          <input type="number" name="" id="columnas-inversa" pattern="[1-9][0-9]*" placeholder="Cantidad de columnas">
+          <button id="enviar-inversa">Confirmar</button>
+        </form>
+      </div>
+      <div class="error-texto">
+        <p class="error-message"></p>
+      </div>
+      <div class="contenedor_bottom">
+        <button id="volver">Volver a la página principal</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <canvas id="estrellas-bg" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></canvas>
+  </body>
+</html>

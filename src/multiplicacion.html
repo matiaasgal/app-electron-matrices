@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Algebra II</title>
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/multi.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="contenedor_titulo">
+        <h1>Ingrese el orden de las matrices</h1>
+      </div>
+      <div class="bottom_texto">
+        <p><span>Nota:</span> Recuerde que para la multiplicacion de matrices las <br><span>columnas de A</span> deben ser iguales a las <span>filas de B</span> <br> ademas solo puede ingresar filas y columnas positivas</p>
+      </div>
+      <div class="contenedor_inputs">
+        <form action="">
+          <input type="number" name="" id="filas-multi" pattern="[1-9][0-9]*" placeholder="Cantidad de filas A">
+          <input type="number" name="" id="filcol-multi" pattern="[1-9][0-9]*" placeholder="Columnas de A | Filas de B">
+          <input type="number" name="" id="columnas-multi" pattern="[1-9][0-9]*" placeholder="Cantidad de columnas B">
+          <button id="enviar-multi">Calcular multiplicacion</button>
+        </form>
+      </div>
+      <div class="error-texto">
+        <p class="error-message">Recuerde que solo se permiten numeros pertenecientes al conjunto de los naturales</p>
+      </div>
+      <div class="contenedor_bottom">
+        <button id="volver">Volver a la página principal</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <canvas id="estrellas-bg" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></canvas>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+    /*! Paleta de colores */
+    --main_oscuro: #1a2a80;
+    --oscuro: #3b38a0;
+    --claro: #7a85c1;
+    --main_claro: #b2b0e8;
+    --text: #959595;
+}
+@font-face {
+    font-family: 'Fuente_B';
+    src: url('../font/Bungee_Inline/BungeeInline-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    min-height: 100vh; 
+    min-width: 100vw;
+    margin: 0;
+}
+body {
+    background: linear-gradient(to bottom, #1a2a80, #6738a0);
+    color: #fff;
+    font-family: 'Fuente_B', -apple-system, sans-serif, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+button {
+    background-color: var(--claro);
+    border: 1px solid white;
+    padding: 13px 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight:600;
+    cursor: pointer;
+    border-radius: 17px;
+    transition: all ease-in .2s;
+}
+button:hover {
+    background-color: var(--oscuro);
+    transform: scale(1.02);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus, input:hover {
+    border: 1px solid white;
+}
+input::placeholder {
+  color: white;
+  opacity: 1;
+}

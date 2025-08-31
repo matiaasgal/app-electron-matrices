@@ -1,0 +1,79 @@
+.contenedor {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contenedor_titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.contenedor_titulo h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+#matriz-container {
+  width: 90%;
+  height: 340px;
+  border-radius: 17px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto;
+  padding: 24px 0;
+}
+#form-matriz {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.fila-matriz {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* máximo 5 columnas por fila */
+  gap: 2px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+#form-matriz input[type="number"] {
+  padding: 12px 8px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--claro);
+  border: 1px solid white;
+  outline: none;
+  font-weight: 500;
+  margin-top: 5px;
+  border-radius: 11px;
+}
+#form-matriz button[type="submit"] {
+  grid-column: 1 / -1;
+  margin: 26px auto 0 auto;
+  padding: 14px 40px;
+  display: block;
+}
+#form-matriz button[type="button"] {
+  grid-column: 1 / -1;
+  margin: 0px auto 0 auto;
+  padding: 14px 40px;
+  display: block;
+}
+.contenedor_bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 35px;
+  left: 0;
+  align-items: center;
+}

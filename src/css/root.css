@@ -50,3 +50,9 @@ input::placeholder {
   color: white;
   opacity: 1;
 }
+.ocultar-scroll {
+  scrollbar-width: none;
+}
+.ocultar-scroll::-webkit-scrollbar {
+  display: none;
+}

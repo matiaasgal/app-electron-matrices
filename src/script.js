@@ -38,6 +38,16 @@ window.addEventListener('DOMContentLoaded', () => {
   animar();
 });
 
+//! Funcion para eliminar la barra scroll en windows
+window.addEventListener('DOMContentLoaded', () => {
+  const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  const matrizContainer = document.getElementById('matriz-container');
+  if (matrizContainer && !isMac) {
+    matrizContainer.classList.add('ocultar-scroll');
+    console.log("es mac");
+  }
+});
+
 //! Funciones de navegacion
 document.getElementById('suma')?.addEventListener('click', () => {
     window.electron.navegarASuma();
@@ -539,15 +549,12 @@ if (window.location.pathname.endsWith('llenadoInversa.html')) {
 
     function inversaMatriz() {
             titulo.textContent = 'La matriz inversa es';
-            const determinante = window.mathAPI.det(arrayMatrices[0].matriz);
+            let determinante = window.mathAPI.det(arrayMatrices[0].matriz);
             let resultado = null;
 
             if (determinante != 0) {
                 resultado = window.mathAPI.inv(arrayMatrices[0].matriz);
-
-                //! Para probar con valores altos
-                //const resultado = Array.from({length:45}, () => Array.from({length:45}, () => Math.floor(Math.random()*100)+1));
-
+                
                 let tableWidth = '90%';
                 let fontSize = '16px';
                 let cellPadding = '8px 16px';

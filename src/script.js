@@ -1,3 +1,4 @@
+//Logica de matrices
 //! Funcion estrellas
 window.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('estrellas-bg');
